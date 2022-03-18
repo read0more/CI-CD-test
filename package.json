@@ -1,0 +1,35 @@
+{
+  "name": "ci-cd-test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prepare": "husky install"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/read0more/CI-CD-test.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/read0more/CI-CD-test/issues"
+  },
+  "homepage": "https://github.com/read0more/CI-CD-test#readme",
+  "devDependencies": {
+    "eslint": "^8.11.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-config-standard": "^16.0.3",
+    "eslint-plugin-import": "^2.25.4",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-promise": "^5.2.0",
+    "husky": ">=6",
+    "lint-staged": ">=10",
+    "prettier": "^2.6.0"
+  },
+  "lint-staged": {
+    "*.js": "eslint --cache --fix",
+    "*.{js,css,md}": "prettier --write"
+  }
+}
