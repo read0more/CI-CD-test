@@ -103,5 +103,10 @@ dist
 # TernJS port file
 .tern-port
 
+# PHP dependencies
+vendor/
+
 # Jet brains IDEs
 .idea
+
+.php-cs-fixer.cache

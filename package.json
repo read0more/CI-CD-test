@@ -32,6 +32,7 @@
   },
   "lint-staged": {
     "*.js": "eslint --cache --fix",
-    "*.{js,css,md}": "prettier --write"
+    "*.{js,css,md}": "prettier --write",
+    "*.php": "vendor/bin/php-cs-fixer fix --config .php-cs-fixer.php --allow-risky=yes"
   }
 }
