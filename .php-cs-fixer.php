@@ -1,11 +1,10 @@
 <?php
 
-echo __DIR__;
 $finder = PhpCsFixer\Finder::create()
-    ->in('/Users/wiseyk/Documents/project/CI-CD-test/.husky')
-    ->exclude(['.husky'])
+    ->in(__DIR__)
+    ->exclude(['vendor'])
     ->name('*.php')
-    ->notName('*not_target.blade.php')
+    ->notName('*not_target.php')
     ->ignoreDotFiles(true)
     ->ignoreVCS(true);
 
