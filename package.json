@@ -36,6 +36,7 @@
     "*.js": "eslint --cache --fix",
     "*.{js,css,md}": "prettier --write",
     "*.test.js": "jest",
+    "*Test.php": "./vendor/bin/phpunit .",
     "**/!(*not_target.php)*.php": [
       "vendor/bin/php-cs-fixer fix --config .php-cs-fixer.php --allow-risky=yes"
     ]
